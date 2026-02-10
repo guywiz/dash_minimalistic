@@ -16,3 +16,7 @@ To make sure you understand how the different layout components combine, try the
   1. Modify the value of the `width` attribute to 40%. What effect doest it have?
   2. Add a style parameter to the dcc.Graph component so it is framed with 40% of the window width.
   3. Why is the title still sitting at the extreme keft of the screen? What is a good way to fiw things so the whole app is centered on the page and sits within 40% of the window width?
+
+---
+
+Example sin the `src/app_MVC` folder look at how the MVC principles can be used to organize code of a `dash` app.
