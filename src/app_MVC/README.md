@@ -9,3 +9,4 @@ These simple examples explore how to organize the code in order to facilitate it
 
 The first example, a one-pager application precisely called `app_one_page.py`, already clearly separates data from views and controls within the file. The next step is to go to a folder separated code organization, together with a head file `app_MVC.py` from which the app is launched.
 
+Example sin the `src/app_MVC` folder look at how the MVC principles can be used to organize code of a `dash` app.
