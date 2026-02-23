@@ -1,0 +1,23 @@
+import dash
+
+from data.data_manager import DataManager
+from view.view_manager import ViewManager
+from control.control import ControlManager
+
+# =====================================================
+# App
+# =====================================================
+app = dash.Dash(__name__)
+server = app.server
+
+app_dm = DataManager()
+app_vm = ViewManager(app_dm)
+app.layout = app_vm.get_layout(app_dm)
+app_cm = ControlManager(app_dm, app_vm)
+app_cm.register_callbacks()
+
+# =====================================================
+# Run
+# =====================================================
+if __name__ == "__main__":
+    app.run_server(debug=True)
